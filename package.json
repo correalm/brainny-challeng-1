@@ -1,0 +1,26 @@
+{
+  "name": "registers",
+  "version": "1.0.0",
+  "description": "Seleção para vaga de estágio na Brainny",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "lint": "eslint ./src --ext .js",
+    "test": "jest"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "Luis Miguel Corrêa",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^7.5.0",
+    "eslint": "^8.24.0",
+    "eslint-plugin-react": "^7.31.8",
+    "jest": "^29.1.2"
+  },
+  "dependencies": {
+    "jest-cli": "^29.1.2"
+  }
+}
