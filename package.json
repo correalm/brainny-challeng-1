@@ -9,12 +9,18 @@
     "lint": "eslint ./src --ext .js",
     "test": "jest"
   },
+  "jest": {
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    }
+  },
   "keywords": [
     "nodejs"
   ],
   "author": "Luis Miguel Corrêa",
   "license": "ISC",
   "devDependencies": {
+    "@babel/preset-env": "^7.19.3",
     "@faker-js/faker": "^7.5.0",
     "eslint": "^8.24.0",
     "eslint-plugin-react": "^7.31.8",

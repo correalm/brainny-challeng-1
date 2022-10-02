@@ -10,8 +10,11 @@ import { getAdultClients } from "./utils/getAdultClients.js";
 import { verifyNamePresence } from "./utils/verifyNamePresence.js";
 import { sumOfSells } from "./utils/sumOfSells.js";
 import { verifyLastPurchase } from "./utils/verifyLastPurchase.js";
+import { getClientsByPurchases } from "./utils/getClientsByPurchases.js";
+import { insertClient } from "./utils/insertClient.js";
 
-const records = buildRecords(10)
+
+const records = buildRecords(1)
 
 
 console.log(getClientsByFirstLetter(records, 'a'))
@@ -27,6 +30,10 @@ listClients(records)
 listClientsWithIndex(records)
 console.log("------------------------------------------------")
 console.log(verifyLastPurchase(records))
+console.log("------------------------------------------------")
+console.log(getClientsByPurchases(records))
+console.log("------------------------------------------------")
+console.log(insertClient(records, buildRecords(1, true)))
 
 
 

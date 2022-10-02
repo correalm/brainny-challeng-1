@@ -9,7 +9,7 @@ const translateGenre = (sex) => {
   }
 }
 
-export const buildRecords = (times) => {
+export const buildRecords = (times, objOnly = false) => {
   const records = []
 
   for (let i = 0; i < times ; i++) {
@@ -27,6 +27,9 @@ export const buildRecords = (times) => {
       lastPurchaseDate: faker.date.between('1999-01-01T00:00:00.000Z', Date.now()),
       countPurchase: faker.random.numeric(getRandomInteger(1, 3))
     }
+
+    if (objOnly) return record
+
     records.push(record)
   }
 
