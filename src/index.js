@@ -34,7 +34,3 @@ console.log("------------------------------------------------")
 console.log(getClientsByPurchases(records))
 console.log("------------------------------------------------")
 console.log(insertClient(records, buildRecords(1, true)))
-
-
-
-
