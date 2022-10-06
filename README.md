@@ -22,6 +22,6 @@ To run tests
 ### `npm test`
 
 ---
-
+## Description
 This project is part of the challenge for an internship at Brainny. The objective was to develop a series of functions that try to handle the contents of an array with 1000 elements.
 
