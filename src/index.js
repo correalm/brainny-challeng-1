@@ -14,7 +14,7 @@ import { getClientsByPurchases } from "./utils/getClientsByPurchases.js";
 import { insertClient } from "./utils/insertClient.js";
 
 
-const records = buildRecords(1)
+const records = buildRecords(1000)
 
 
 console.log(getClientsByFirstLetter(records, 'a'))
